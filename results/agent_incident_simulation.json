@@ -1,0 +1,685 @@
+[
+  {
+    "incident_id": "INC-0000",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.472] [Coordinator]: Initialized incident pipeline INC-0000 with multi-agent architecture.",
+      "[14:06:42.533] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 60.95ms)",
+      "[14:06:42.533] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.533] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.533] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0001",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.533] [Coordinator]: Initialized incident pipeline INC-0001 with multi-agent architecture.",
+      "[14:06:42.586] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 52.92ms)",
+      "[14:06:42.586] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.586] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.586] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0002",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.587] [Coordinator]: Initialized incident pipeline INC-0002 with multi-agent architecture.",
+      "[14:06:42.614] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 27.18ms)",
+      "[14:06:42.614] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.614] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.614] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0003",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.614] [Coordinator]: Initialized incident pipeline INC-0003 with multi-agent architecture.",
+      "[14:06:42.648] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 33.35ms)",
+      "[14:06:42.648] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.648] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.648] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0004",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.648] [Coordinator]: Initialized incident pipeline INC-0004 with multi-agent architecture.",
+      "[14:06:42.687] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 38.47ms)",
+      "[14:06:42.687] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.687] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.687] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0005",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.687] [Coordinator]: Initialized incident pipeline INC-0005 with multi-agent architecture.",
+      "[14:06:42.725] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 37.99ms)",
+      "[14:06:42.725] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.725] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.725] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0006",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.726] [Coordinator]: Initialized incident pipeline INC-0006 with multi-agent architecture.",
+      "[14:06:42.768] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 42.41ms)",
+      "[14:06:42.768] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.768] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.768] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0007",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.769] [Coordinator]: Initialized incident pipeline INC-0007 with multi-agent architecture.",
+      "[14:06:42.815] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 46.29ms)",
+      "[14:06:42.815] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:42.815] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:42.815] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0008",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.3064212622195722,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:42.816] [Coordinator]: Initialized incident pipeline INC-0008 with multi-agent architecture.",
+      "[14:06:55.705] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.306. ML model score=0.497 (inference: 39.95ms) | LLM contextual validation score=0.020",
+      "[14:06:55.705] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:55.705] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:55.705] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0009",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:55.706] [Coordinator]: Initialized incident pipeline INC-0009 with multi-agent architecture.",
+      "[14:06:55.766] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 59.52ms)",
+      "[14:06:55.766] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:55.766] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:55.766] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0010",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:55.766] [Coordinator]: Initialized incident pipeline INC-0010 with multi-agent architecture.",
+      "[14:06:55.821] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 54.48ms)",
+      "[14:06:55.821] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:55.821] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:55.821] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0011",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:55.821] [Coordinator]: Initialized incident pipeline INC-0011 with multi-agent architecture.",
+      "[14:06:55.879] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 57.35ms)",
+      "[14:06:55.879] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:55.879] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:55.879] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0012",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:55.879] [Coordinator]: Initialized incident pipeline INC-0012 with multi-agent architecture.",
+      "[14:06:55.941] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 60.98ms)",
+      "[14:06:55.941] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:55.941] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:55.941] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0013",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:55.941] [Coordinator]: Initialized incident pipeline INC-0013 with multi-agent architecture.",
+      "[14:06:55.987] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 46.30ms)",
+      "[14:06:55.988] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:55.988] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:55.988] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0014",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:55.988] [Coordinator]: Initialized incident pipeline INC-0014 with multi-agent architecture.",
+      "[14:06:56.043] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 54.92ms)",
+      "[14:06:56.043] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.043] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.043] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0015",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.043] [Coordinator]: Initialized incident pipeline INC-0015 with multi-agent architecture.",
+      "[14:06:56.089] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 45.43ms)",
+      "[14:06:56.089] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.089] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.089] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0016",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.090] [Coordinator]: Initialized incident pipeline INC-0016 with multi-agent architecture.",
+      "[14:06:56.133] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 43.55ms)",
+      "[14:06:56.133] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.133] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.133] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0017",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.14374003963695153,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.134] [Coordinator]: Initialized incident pipeline INC-0017 with multi-agent architecture.",
+      "[14:06:56.172] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.144. ML model score=0.144 (inference: 38.71ms)",
+      "[14:06:56.172] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.172] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.172] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0018",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.173] [Coordinator]: Initialized incident pipeline INC-0018 with multi-agent architecture.",
+      "[14:06:56.192] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 19.00ms)",
+      "[14:06:56.192] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.192] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.192] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0019",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.192] [Coordinator]: Initialized incident pipeline INC-0019 with multi-agent architecture.",
+      "[14:06:56.220] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 28.19ms)",
+      "[14:06:56.220] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.221] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.221] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0020",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.08806389713094796,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.221] [Coordinator]: Initialized incident pipeline INC-0020 with multi-agent architecture.",
+      "[14:06:56.248] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.088. ML model score=0.088 (inference: 27.15ms)",
+      "[14:06:56.248] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.248] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.248] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0021",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.249] [Coordinator]: Initialized incident pipeline INC-0021 with multi-agent architecture.",
+      "[14:06:56.276] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 26.74ms)",
+      "[14:06:56.276] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.276] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.276] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0022",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.02,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.276] [Coordinator]: Initialized incident pipeline INC-0022 with multi-agent architecture.",
+      "[14:06:56.306] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.020. ML model score=0.020 (inference: 29.80ms)",
+      "[14:06:56.306] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.306] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.306] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0023",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.0936537377177596,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.306] [Coordinator]: Initialized incident pipeline INC-0023 with multi-agent architecture.",
+      "[14:06:56.336] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.094. ML model score=0.094 (inference: 29.16ms)",
+      "[14:06:56.336] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.336] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.336] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0024",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:06:56.336] [Coordinator]: Initialized incident pipeline INC-0024 with multi-agent architecture.",
+      "[14:06:56.363] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 27.34ms)",
+      "[14:06:56.363] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:06:56.363] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:06:56.364] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0025",
+    "is_anomaly": true,
+    "threat_category": "Zero-Day",
+    "detection_score": 1.0,
+    "confidence": 0.85,
+    "action": "Security patch deployment for known exploits (SIMULATED)",
+    "mitre_techniques": [
+      "T1204"
+    ],
+    "audit_trace": [
+      "[14:06:56.364] [Coordinator]: Initialized incident pipeline INC-0025 with multi-agent architecture.",
+      "[14:06:56.391] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=True, score=1.000. ML model score=1.000 (inference: 27.15ms)",
+      "[14:07:08.470] [Classification Agent (A_C)]: Assigned threat class 'Zero-Day' with confidence 0.85. MITRE: ['T1204']",
+      "[14:07:08.479] [Response Agent (A_R)]: Autonomous response chosen: 'Security patch deployment for known exploits (SIMULATED)'",
+      "[14:07:08.479] [Forensic Agent (A_F)]: Official Incident Forensic Report generated successfully.",
+      "[14:07:08.479] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": true
+  },
+  {
+    "incident_id": "INC-0026",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.480] [Coordinator]: Initialized incident pipeline INC-0026 with multi-agent architecture.",
+      "[14:07:08.530] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 49.57ms)",
+      "[14:07:08.530] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.530] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.530] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0027",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.530] [Coordinator]: Initialized incident pipeline INC-0027 with multi-agent architecture.",
+      "[14:07:08.578] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 47.66ms)",
+      "[14:07:08.578] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.578] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.578] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0028",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.578] [Coordinator]: Initialized incident pipeline INC-0028 with multi-agent architecture.",
+      "[14:07:08.634] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 55.55ms)",
+      "[14:07:08.634] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.634] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.634] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0029",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.634] [Coordinator]: Initialized incident pipeline INC-0029 with multi-agent architecture.",
+      "[14:07:08.676] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 41.77ms)",
+      "[14:07:08.676] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.676] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.676] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0030",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.677] [Coordinator]: Initialized incident pipeline INC-0030 with multi-agent architecture.",
+      "[14:07:08.719] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 42.12ms)",
+      "[14:07:08.719] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.719] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.719] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0031",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.719] [Coordinator]: Initialized incident pipeline INC-0031 with multi-agent architecture.",
+      "[14:07:08.760] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 41.01ms)",
+      "[14:07:08.761] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.761] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.761] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0032",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.761] [Coordinator]: Initialized incident pipeline INC-0032 with multi-agent architecture.",
+      "[14:07:08.800] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 38.58ms)",
+      "[14:07:08.800] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.800] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.800] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0033",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.14374003963695153,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.800] [Coordinator]: Initialized incident pipeline INC-0033 with multi-agent architecture.",
+      "[14:07:08.847] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.144. ML model score=0.144 (inference: 46.58ms)",
+      "[14:07:08.847] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.847] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.847] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0034",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.848] [Coordinator]: Initialized incident pipeline INC-0034 with multi-agent architecture.",
+      "[14:07:08.890] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 41.67ms)",
+      "[14:07:08.890] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.890] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.890] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0035",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.890] [Coordinator]: Initialized incident pipeline INC-0035 with multi-agent architecture.",
+      "[14:07:08.934] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 43.62ms)",
+      "[14:07:08.934] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.934] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.934] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0036",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.14374003963695153,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.934] [Coordinator]: Initialized incident pipeline INC-0036 with multi-agent architecture.",
+      "[14:07:08.968] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.144. ML model score=0.144 (inference: 33.98ms)",
+      "[14:07:08.968] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.968] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.968] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0037",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.969] [Coordinator]: Initialized incident pipeline INC-0037 with multi-agent architecture.",
+      "[14:07:08.995] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 25.95ms)",
+      "[14:07:08.995] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:08.995] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:08.995] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0038",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:08.996] [Coordinator]: Initialized incident pipeline INC-0038 with multi-agent architecture.",
+      "[14:07:09.015] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 19.45ms)",
+      "[14:07:09.015] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:09.015] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:09.015] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  },
+  {
+    "incident_id": "INC-0039",
+    "is_anomaly": false,
+    "threat_category": "Normal",
+    "detection_score": 0.32194969473121715,
+    "confidence": 0.98,
+    "action": "No action",
+    "mitre_techniques": [],
+    "audit_trace": [
+      "[14:07:09.015] [Coordinator]: Initialized incident pipeline INC-0039 with multi-agent architecture.",
+      "[14:07:09.042] [Detection Agent (A_D)]: Evaluated event stream: is_anomaly=False, score=0.322. ML model score=0.322 (inference: 26.57ms)",
+      "[14:07:09.042] [Classification Agent (A_C)]: Event confirmed Normal. Assigned category 'Normal'.",
+      "[14:07:09.042] [Response Agent (A_R)]: Threat level nominal; selected 'No action'.",
+      "[14:07:09.042] [Coordinator]: Incident analysis complete across all four agents."
+    ],
+    "has_forensic_report": false
+  }
+]

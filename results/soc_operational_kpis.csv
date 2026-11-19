@@ -1,0 +1,2 @@
+MTTD (min),MTTR Response (min),MTTR Resolve (min),FPR (%),Alert Fatigue Ratio (%),Automation Rate (%),Containment Success Rate (%),False Mitigation Rate (%),Response Cost Score
+0.54,0.001,0.2,0.0,100.0,100.0,0.0,0.0,0.0

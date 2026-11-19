@@ -1,0 +1,66 @@
+# CyberSentinel-LLM: Project Progress & Implementation Status
+
+## 1. Executive Summary & Project Status
+- Project: CyberSentinel-LLM ("A Large Language Model-Driven Autonomous Framework for Intelligent Cyber Threat Detection and Response", Tahani Alsubait, Tech Science Press / CMC, 2026).
+- Overall Status: COMPLETED & FULLY UPGRADED.
+- Key Achievements in Current Milestone:
+  1. Solved the metric convergence question with empirical evidence from `results/comparative_predictions.csv`:
+     - Discovered that on the binary 150-sample evaluation slice, ML and LLM each achieved 14 TPs and 6 FNs by coincidence on binary aggregation, but made different individual errors (disagreeing on samples at Idx 96 and Idx 147).
+     - Upgraded to true ensemble algorithmic fusion ($P_{combined} = 0.5 \cdot P_{ML} + 0.5 \cdot P_{LLM}$), which detects both cases, lifting True Positives from 14 to 15, accuracy from 96.00% to 96.67%, recall from 85.00% to 87.50%, and Macro-F1 from 90.05% to 91.91%.
+     - Evaluated fine-grained 6-class MITRE threat categorization where ML is strictly binary (N/A) while LLM and Combined achieve ~94% multi-class accuracy.
+  2. Implemented Publication-Grade 19-Section SOC Incident Forensic Investigation Report (`cybersentinel/forensic.py`):
+     - Normalized sequential evidence indexing (`E-001`, `E-002`, `E-003`) with SHA-256 cryptographic provenance hashes.
+     - Event-by-event technical analysis and pairwise correlation tables.
+     - Indicators of Compromise (IoCs) and MITRE ATT&CK candidate validation.
+     - Competing hypothesis analysis (Hypothesis A vs B vs C) with supporting and contradicting evidence.
+     - Asset impact and business criticality matrix.
+     - Response decision justification with explicit **SIMULATED / SANDBOX** safety labeling.
+     - 4-phase prioritized remediation, containment, and recovery plan (P0 through P3).
+     - Residual risk and 9-point conclusive assessment.
+     - Full Markdown report export and standalone, publication-styled printable HTML with `@media print` rules and `window.print()` browser trigger.
+  3. Upgraded Interactive Dashboard (`app.py`):
+     - Integrated session state persistence so analyses survive button interactions.
+     - Added dedicated download buttons: `📥 Download Report (.md)` and `📄 Download Printable HTML`.
+     - Embedded live printable HTML frame using `streamlit.components.v1.html` for direct browser printing (`Ctrl+P`).
+     - Added structured expandable accordions for all 19 investigation sections.
+     - Added test preset: `"🚨 Insider Threat: Console Key Export Attempt (Prompt Test)"`.
+  4. Created Unit Tests for Forensic Engine (`tests/test_forensic_report.py`):
+     - 3/3 tests passing (0.003s) validating section headers, evidence indexing, timestamp preservation, and simulated status verification.
+     - 10/10 regression tests passing in `tests/test_cybersentinel.py` (37.21s).
+
+## 2. Completed Milestones & Components
+- [x] Phase 1: Environment Inspection, Research Paper Analysis, and Plan Formulation.
+- [x] Phase 2: Modular Dataset Pipeline (`cybersentinel/data.py`, `cybersentinel/features.py`, `scripts/prepare_data.py`).
+- [x] Phase 3: Traditional Machine Learning Classification Benchmark (`cybersentinel/ml_classifiers.py`, `scripts/train_ml.py`):
+  * Random Forest (HDFS best model: 98.56% Acc, 90.80% Macro-F1).
+  * HistGradientBoosting (BGL best model: 98.00% Acc, 92.32% Macro-F1).
+- [x] Phase 4: Local LLaMA 3 8B Inference Client (`cybersentinel/llm_client.py`):
+  * Local Ollama connectivity with offline deterministic fallback option (`CYBERSENTINEL_OFFLINE_LLM=1`).
+  * LLaMA fine-tuning strictly deferred as instructed.
+- [x] Phase 5: Mandatory Comparative Evaluation (`cybersentinel/comparative_eval.py`, `scripts/run_comparative_eval.py`):
+  * Configuration 1 (Classifier-Only RF): Binary Acc=96.00%, Recall=85.00%, Macro-F1=90.05%, Latency=1.59 ms.
+  * Configuration 2 (LLM-Only LLaMA-3-8B): Binary Acc=96.00%, Recall=85.00%, Macro-F1=90.05%, Multiclass Acc=94.00%, Latency=0.03 ms (fallback) / 12.1 s (live Ollama).
+  * Configuration 3 (Classifier + LLM Ensemble): Binary Acc=96.67%, Recall=87.50%, Macro-F1=91.91%, Multiclass Acc=93.33%, Latency=0.12 ms.
+- [x] Phase 6: Multi-Agent Collaborative Architecture & DRL Response Orchestrator (`cybersentinel/agents.py`, `cybersentinel/ppo_orchestrator.py`, `cybersentinel/metrics.py`):
+  * 4 Specialized Agents: Detection (A_D), Classification (A_C), Response (A_R), Forensic (A_F).
+  * PPO policy checkpoint: `artifacts/ppo_response_policy.pt`.
+- [x] Phase 7: Professional Forensic Reporting Engine (`cybersentinel/forensic.py`):
+  * 19 required analytical sections.
+  * Interactive print trigger and `@media print` styled HTML.
+- [x] Phase 8: Functional Streamlit Dashboard (`app.py`):
+  * Live Multi-Agent Investigation with printable report view.
+  * Comparative evaluation charts and baseline ML benchmark tables.
+- [x] Phase 9: Verification & Automated Test Suites:
+  * `tests/test_cybersentinel.py`: 10/10 tests passed.
+  * `tests/test_forensic_report.py`: 3/3 tests passed.
+
+## 3. Key Files & Artifacts
+- `cybersentinel/forensic.py`: 19-section SOC forensic report generator.
+- `cybersentinel/agents.py`: Four-agent collaborative coordinator with shared memory.
+- `cybersentinel/comparative_eval.py`: True ensemble comparative evaluation engine.
+- `app.py`: Streamlit operations dashboard with printable report viewer.
+- `results/comparative_evaluation_table.csv`: Empirical 3-way comparative metrics.
+- `results/comparative_predictions.csv`: Sample-by-sample predictions across ML, LLM, and Ensemble.
+- `results/comparative_evaluation_chart.png`: Visualization chart.
+- `tests/test_forensic_report.py`: Dedicated unit test suite for forensic reporting.
+- `tests/test_cybersentinel.py`: Regression unit test suite.

@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large binary / archive files (>100MB exceeds GitHub push limits)
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment and Secret files
+.env
+.env.*
+!.env.example
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Testing and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/

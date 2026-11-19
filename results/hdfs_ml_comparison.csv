@@ -1,0 +1,4 @@
+model,train_time_s,val_accuracy,val_precision,val_recall,val_macro_f1,val_roc_auc,latency_ms
+RF,2.061,96.64,84.47,74.5,78.54,77.35,0.26
+GB,9.399,97.12,93.65,72.37,79.25,75.69,0.34
+LR,1.652,97.12,90.43,74.75,80.5,76.16,0.24

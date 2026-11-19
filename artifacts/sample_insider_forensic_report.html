@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CyberSentinel-LLM Incident Forensic Report - INC-2026-0881</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1a202c;
+        line-height: 1.5;
+        margin: 0;
+        padding: 24px;
+        background-color: #f7fafc;
+    }
+    .report-card {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .header-bar {
+        border-bottom: 3px solid #2b6cb0;
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-title {
+        margin: 0;
+        color: #2b6cb0;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+    .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        background: #edf2f7;
+        padding: 16px;
+        border-radius: 6px;
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+    .meta-item b {
+        color: #4a5568;
+    }
+    h2 {
+        font-size: 18px;
+        color: #2d3748;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 6px;
+        margin-top: 28px;
+        margin-bottom: 12px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    th, td {
+        border: 1px solid #cbd5e0;
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background-color: #edf2f7;
+        color: #2d3748;
+        font-weight: 600;
+    }
+    tr:nth-child(even) {
+        background-color: #f7fafc;
+    }
+    .badge {
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .badge-critical { background: #fed7d7; color: #9b2c2c; }
+    .badge-high { background: #feebc8; color: #c05621; }
+    .badge-warn { background: #feebc8; color: #c05621; }
+    .badge-alert { background: #fed7d7; color: #9b2c2c; }
+    .badge-info { background: #e2e8f0; color: #4a5568; }
+    .badge-candidate { background: #e9d8fd; color: #6b46c1; }
+    .badge-p0 { background: #fed7d7; color: #9b2c2c; }
+    .print-btn-container {
+        text-align: right;
+        margin-bottom: 16px;
+    }
+    .btn-print {
+        background: #3182ce;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-print:hover {
+        background: #2b6cb0;
+    }
+    .disclaimer {
+        background: #fffaf0;
+        border-left: 4px solid #dd6b20;
+        padding: 12px;
+        font-size: 12px;
+        color: #7b341e;
+        margin-bottom: 20px;
+    }
+    @media print {
+        body {
+            background: #ffffff;
+            padding: 0;
+        }
+        .report-card {
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            max-width: 100%;
+        }
+        .btn-print {
+            display: none;
+        }
+        .header-bar {
+            border-bottom: 2px solid #000;
+        }
+        th {
+            background-color: #f0f0f0 !important;
+            -webkit-print-color-adjust: exact;
+        }
+        table, th, td {
+            font-size: 10px;
+        }
+        h2 {
+            page-break-after: avoid;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="report-card">
+    <div class="print-btn-container">
+        <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+
+    <div class="header-bar">
+        <div>
+            <h1 class="header-title">🛡️ CYBERSENTINEL-LLM</h1>
+            <div style="font-size: 13px; color: #4a5568;">Incident Forensic Investigation Report</div>
+        </div>
+        <div style="text-align: right; font-size: 12px;">
+            <div><b>Report ID:</b> RPT-CSL-20261119-1220</div>
+            <div><b>Incident ID:</b> INC-2026-0881</div>
+            <div><b>Generated:</b> 2026-11-19 09:35:31 UTC</div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <b>RESEARCH & OPERATIONAL SAFETY NOTICE:</b> All defensive actions and response recommendations documented herein
+        are strictly <b>SIMULATED</b> in a controlled research virtual sandbox. No modifications have been made to live host configurations.
+    </div>
+
+    <div class="meta-grid">
+        <div class="meta-item"><b>Threat Class:</b> Insider Threat</div>
+        <div class="meta-item"><b>Severity Level:</b> HIGH</div>
+        <div class="meta-item"><b>Investigation Status:</b> UNDER INVESTIGATION — MITIGATION SIMULATED</div>
+        <div class="meta-item"><b>Anomaly Detection Score:</b> 0.940</div>
+        <div class="meta-item"><b>Classification Confidence:</b> 0.950</div>
+        <div class="meta-item"><b>Investigation Mode:</b> 4-Agent Collaborative Hybrid</div>
+        <div class="meta-item"><b>Total Logs Analyzed:</b> 3</div>
+        <div class="meta-item"><b>Suspicious Records:</b> 3</div>
+        <div class="meta-item"><b>Observed Window:</b> 14:22:10 to 14:22:20</div>
+    </div>
+
+    <h2>1. Executive Summary</h2>
+    <p>CyberSentinel-LLM detected a series of anomalous, security-relevant system events spanning the window from 14:22:10 to 14:22:20. The investigation examined 3 log entries (E-001, E-002, E-003) from auth.SecurityManager, dfs.FSNamesystem, identifying activity categorized as **Insider Threat** with a severity classification of **HIGH**.<br><br>The incident involved entity `root` interacting with critical cluster subsystems. The activity exhibited a suspicious sequence comprising authentication anomalies, attempted privilege transitions, and access control denials against sensitive cluster resources. The Detection Agent recorded an anomaly score of **0.940**, and the Classification Agent evaluated classification confidence at **0.950**.<br><br>In accordance with research safety protocols, the Response Agent proposed defensive action **'User account suspension for insider threat (SIMULATED)'**, which has been **SIMULATED in the sandbox environment** without modifying production host configuration. Immediate human analyst review of upstream session identifiers and privilege audit logs is recommended before incident closure.</p>
+
+    <h2>2. Detailed Incident Narrative</h2>
+    <p>### Chronological Reconstruction and Event Analysis<br><br>The incident unfolds across a defined temporal sequence spanning from 14:22:10 to 14:22:20. A rigorous, event-by-event examination reveals how individual records correlate into an overarching pattern.<br><br>**Event E-001 (Recorded at 14:22:10 by `auth.SecurityManager` | Severity: WARN):**<br>The log records: *"14:22:10 WARN auth.SecurityManager: Repeated authentication failures from user root on console session"*. In this event, entity `root` associated with process `Not specified` interacted with `Local Administrative Console Session (tty/vty)`. From a technical standpoint, this event signifies that consecutive authentication rejections indicating credential mismatch or brute-force trial. From a security perspective, this is notable because high relevance: repeated failures on elevated accounts indicate potential credential attack or unauthorized operator. A legitimate operational explanation could be legitimate systems administrator entering an incorrect password or typing on an improper keyboard layout. Conversely, an adversarial interpretation suggests an unauthorized actor attempting to probe or compromise the resource. To definitively separate these explanations, the investigation requires console session tty identifier, physical or remote source ip, subsequent login success logs.<br><br>**Event E-002 (Recorded at 14:22:15 by `auth.SecurityManager` | Severity: ALERT):**<br>The log records: *"14:22:15 ALERT auth.SecurityManager: Unauthorized privilege escalation attempted by process PID_9921"*. In this event, entity `Not specified` associated with process `PID_9921` interacted with `Web Application Endpoint / SSO Gateway`. From a technical standpoint, this event signifies that execution context attempted transition to elevated capabilities without authorization. From a security perspective, this is notable because high relevance: privilege escalation is a key technique in compromise progression (mitre t1068). A legitimate operational explanation could be automated system maintenance script invoking setuid/sudo without updated access credentials. Conversely, an adversarial interpretation suggests an unauthorized actor attempting to probe or compromise the resource. To definitively separate these explanations, the investigation requires process ancestry tree, parent pid, full command line binary path, effective uid/gid audit.<br><br>**Event E-003 (Recorded at 14:22:20 by `dfs.FSNamesystem` | Severity: WARN):**<br>The log records: *"14:22:20 WARN dfs.FSNamesystem: Permission denied: user root is not authorized to export cryptographic keys"*. In this event, entity `root` associated with process `Not specified` interacted with `Cryptographic Key Storage / Export Service`. From a technical standpoint, this event signifies that distributed filesystem security manager blocked unauthorized cryptographic key material extraction. From a security perspective, this is notable because high relevance: key material export poses immediate confidentiality and data compromise risks (mitre t1552). A legitimate operational explanation could be administrative backup script attempting to archive secure keystore without proper export role. Conversely, an adversarial interpretation suggests an unauthorized actor attempting to probe or compromise the resource. To definitively separate these explanations, the investigation requires keystore audit access logs, specific cli command or rpc payload requested, originating socket.<br><br>### Correlative Synthesis and Investigation Assessment<br><br>When evaluated as an aggregated sequence, the events exhibit significant logical and temporal proximity. The progression from initial anomalies (E-001) through subsequent escalations and resource queries indicates that these records are not isolated occurrences. However, the evidence currently available demonstrates **suspicious attempts rather than confirmed compromise**. Specifically, the access-control subsystems successfully enforced authorization boundaries (e.g. permission rejections). Therefore, while the behavior strongly warrants incident triage, there is no evidence confirming successful data extraction or system compromise.</p>
+
+    <h2>3. Event-by-Event Technical Analysis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Time</th><th>Component</th><th>Sev</th><th>User</th><th>PID</th>
+                <th>Target Resource</th><th>Observed Event</th><th>Technical Interpretation</th>
+                <th>Security Relevance</th><th>Benign Explanation</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><code>E-001</code></td>
+                <td>14:22:10</td>
+                <td><b>auth.SecurityManager</b></td>
+                <td><span class="badge badge-warn">WARN</span></td>
+                <td>root</td>
+                <td><code>Not specified</code></td>
+                <td>Local Administrative Console Session (tty/vty)</td>
+                <td>Repeated authentication failure sequence on privileged console session</td>
+                <td>Consecutive authentication rejections indicating credential mismatch or brute-force trial</td>
+                <td>High relevance: repeated failures on elevated accounts indicate potential credential attack or unauthorized operator</td>
+                <td><i>Legitimate systems administrator entering an incorrect password or typing on an improper keyboard layout</i></td>
+            </tr>
+            
+            <tr>
+                <td><code>E-002</code></td>
+                <td>14:22:15</td>
+                <td><b>auth.SecurityManager</b></td>
+                <td><span class="badge badge-alert">ALERT</span></td>
+                <td>Not specified</td>
+                <td><code>PID_9921</code></td>
+                <td>Web Application Endpoint / SSO Gateway</td>
+                <td>Unauthorized attempt to escalate security privileges by local process</td>
+                <td>Execution context attempted transition to elevated capabilities without authorization</td>
+                <td>High relevance: privilege escalation is a key technique in compromise progression (MITRE T1068)</td>
+                <td><i>Automated system maintenance script invoking setuid/sudo without updated access credentials</i></td>
+            </tr>
+            
+            <tr>
+                <td><code>E-003</code></td>
+                <td>14:22:20</td>
+                <td><b>dfs.FSNamesystem</b></td>
+                <td><span class="badge badge-warn">WARN</span></td>
+                <td>root</td>
+                <td><code>Not specified</code></td>
+                <td>Cryptographic Key Storage / Export Service</td>
+                <td>Access control rejection: user denied authorization to export cryptographic keys</td>
+                <td>Distributed filesystem security manager blocked unauthorized cryptographic key material extraction</td>
+                <td>High relevance: key material export poses immediate confidentiality and data compromise risks (MITRE T1552)</td>
+                <td><i>Administrative backup script attempting to archive secure keystore without proper export role</i></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>4. Evidence Correlation and Attack Progression</h2>
+    <table>
+        <thead>
+            <tr><th>Earlier</th><th>Later</th><th>Connecting Evidence</th><th>Possible Interpretation</th><th>Confidence</th></tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><code>E-001</code></td>
+                <td><code>E-002</code></td>
+                <td>Temporal proximity (14:22:10 -> 14:22:15); shared subsystem context or privileged account reference</td>
+                <td>Progression from repeated authentication failure sequence on privileged console session to unauthorized attempt to escalate security privileges by local process</td>
+                <td>Moderate-High (Logical Temporal Ordering)</td>
+            </tr>
+            
+            <tr>
+                <td><code>E-002</code></td>
+                <td><code>E-003</code></td>
+                <td>Temporal proximity (14:22:15 -> 14:22:20); shared subsystem context or privileged account reference</td>
+                <td>Progression from unauthorized attempt to escalate security privileges by local process to access control rejection: user denied authorization to export cryptographic keys</td>
+                <td>Moderate-High (Logical Temporal Ordering)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>5. Indicators of Compromise and Suspicious Artifacts</h2>
+    <table>
+        <thead>
+            <tr><th>Value</th><th>Type</th><th>Source</th><th>Relevance</th><th>Status</th><th>Validation</th></tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><code>root</code></td>
+                <td>User Account Identifier</td>
+                <td><code>E-001</code></td>
+                <td>Account targeted or claimed during execution</td>
+                <td>Directly Observed</td>
+                <td>Cross-reference active directory / /etc/passwd and check active login sessions</td>
+            </tr>
+            
+            <tr>
+                <td><code>PID_9921</code></td>
+                <td>Process Identifier (PID)</td>
+                <td><code>E-002</code></td>
+                <td>Process attempting privilege escalation or execution</td>
+                <td>Directly Observed</td>
+                <td>Inspect OS process table, inspect `/proc/<PID>`, verify parent process binary</td>
+            </tr>
+            
+            <tr>
+                <td><code>Cryptographic Key Keystore</code></td>
+                <td>Sensitive Security Artifact</td>
+                <td><code>E-003</code></td>
+                <td>Target of unauthorized export request</td>
+                <td>Directly Observed Rejection Target</td>
+                <td>Verify key vault integrity and rotate potentially targeted keys</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>6. MITRE ATT&CK Mapping & Technique Analysis</h2>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Technique Name</th><th>Security Relevance</th><th>Supporting Evidence</th><th>Status</th><th>Confirmation Criteria</th></tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><b>T1078</b></td>
+                <td>Valid Accounts</td>
+                <td>Potential unauthorized attempt to authenticate using valid administrative credentials</td>
+                <td><code>Authentication rejections recorded in ['E-001', 'E-002', 'E-003']</code></td>
+                <td><span class="badge badge-candidate">Candidate / Suspected (Attempted, not confirmed successful)</span></td>
+                <td>Audit log proving successful logon following rejections</td>
+            </tr>
+            
+            <tr>
+                <td><b>T1068</b></td>
+                <td>Exploitation for Privilege Escalation</td>
+                <td>Process attempting to bypass software limitations to gain elevated capabilities</td>
+                <td><code>Explicit alert recorded in ['E-002']</code></td>
+                <td><span class="badge badge-candidate">Suspected (Unauthorized attempt blocked by security manager)</span></td>
+                <td>Process crash dump, shell execution telemetry, or kernel audit log</td>
+            </tr>
+            
+            <tr>
+                <td><b>T1552.004</b></td>
+                <td>Unsecured Credentials: Private Keys</td>
+                <td>Request initiated to extract cryptographic keys from cluster storage</td>
+                <td><code>Export authorization denial in ['E-003']</code></td>
+                <td><span class="badge badge-candidate">Candidate (Access was denied by access control policy)</span></td>
+                <td>Evidence of successful keystore access or key exfiltration over network</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>7. Root-Cause Analysis and Competing Hypotheses</h2>
+    <table>
+        <thead>
+            <tr><th>Hypothesis</th><th>Description</th><th>Supporting Evidence</th><th>Contradicting Evidence</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><b>Hypothesis A: Credential Compromise & Privilege Escalation Attempt</b></td>
+                <td>An unauthorized party obtained root account identifiers and attempted to escalate privileges to access sensitive cryptographic assets.</td>
+                <td>Chronological progression of failed auth (E-001) -> escalation attempt (E-002) -> key export request (E-003).</td>
+                <td>Access controls held successfully; permission was denied; no successful session establishment recorded.</td>
+                <td><span class="badge badge-candidate">Plausible / Strongly Supported as Attempted Attack</span></td>
+            </tr>
+            
+            <tr>
+                <td><b>Hypothesis B: Misconfigured Administrative Backup Script</b></td>
+                <td>A legitimate automated administrative maintenance or backup script ran with expired credentials and insufficient keystore permissions.</td>
+                <td>Targeted root user, rapid sequential execution (5-second intervals), standard system utilities.</td>
+                <td>Flagged as 'unauthorized privilege escalation' by SecurityManager rather than standard credential expiration.</td>
+                <td><span class="badge badge-candidate">Plausible Alternative Benign Explanation</span></td>
+            </tr>
+            
+            <tr>
+                <td><b>Hypothesis C: Coordinated Insider Threat</b></td>
+                <td>An authorized insider attempted to leverage elevated access to extract private cryptographic keys for unauthorized data decryption.</td>
+                <td>Direct targeting of cryptographic key export mechanism; console session access.</td>
+                <td>High failure rate and overt noisy behavior atypical of sophisticated covert insider activity.</td>
+                <td><span class="badge badge-candidate">Weakly Supported / Unresolved</span></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>8. Response Decision & Safeguard Justification</h2>
+    <div style="background: #edf2f7; padding: 12px; border-radius: 6px; font-size: 13px; line-height: 1.6;">
+        <div><b>Recommended Action:</b> <code>User account suspension for insider threat</code></div>
+        <div><b>Status:</b> <span class="badge badge-warn">SIMULATED — NOT DEPLOYED (Educational/Research Sandbox)</span></div>
+        <div><b>Objective:</b> Proportionate containment of suspected Insider Threat activity</div>
+        <div><b>Security Benefit:</b> Prevents potential lateral traversal, process propagation, or unauthorized keystore extraction</div>
+        <div><b>Operational Risk:</b> Potential disruption to dependent administrative batch jobs if process or account is terminated</div>
+        <div><b>Required Authorization:</b> Mandatory Human Analyst Approval (High-Impact Response Action)</div>
+    </div>
+
+    <h2>9. Remediation, Containment, and Recovery Plan</h2>
+    <table>
+        <thead>
+            <tr><th>Phase</th><th>Action</th><th>Priority</th><th>Responsible Role</th><th>Verification Criterion</th></tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><b>1. Immediate Triage & Validation</b></td>
+                <td>Correlate console tty with active administrator roster and verify user root activity.</td>
+                <td><span class="badge badge-p0">P0 (Immediate: < 15 min)</span></td>
+                <td>Tier 1 / Tier 2 SOC Analyst</td>
+                <td>Confirmed verbal or cryptographic ticket authorization from administrator</td>
+            </tr>
+            
+            <tr>
+                <td><b>2. Proportionate Containment</b></td>
+                <td>If activity is unverified, suspend console session and isolate process PID_9921 in sandbox.</td>
+                <td><span class="badge badge-p0">P1 (Within 1 hour)</span></td>
+                <td>Incident Response Lead</td>
+                <td>Process PID_9921 status verified terminated or frozen</td>
+            </tr>
+            
+            <tr>
+                <td><b>3. Eradication & Remediation</b></td>
+                <td>Rotate administrative passwords and service account keys; patch or correct keystore export ACLs.</td>
+                <td><span class="badge badge-p0">P2 (Within 24 hours)</span></td>
+                <td>Systems / Security Engineer</td>
+                <td>New cryptographic key generation timestamp verified; old keys revoked</td>
+            </tr>
+            
+            <tr>
+                <td><b>4. Post-Incident Monitoring</b></td>
+                <td>Enable heightened auditd rule tracking for keystore access and privilege escalation for 14 days.</td>
+                <td><span class="badge badge-p0">P3 (Ongoing)</span></td>
+                <td>SOC Engineering</td>
+                <td>SIEM dashboard shows dedicated alert rule firing on any key export attempt</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>10. Final Assessment & Conclusion</h2>
+    <p>### Final Forensic Conclusion & Assessment<br><br>1. **Confirmed Facts**: The system recorded explicit authorization rejections and privilege escalation alerts across evidence entries E-001, E-002, E-003.<br>2. **Observed Suspicious Behavior**: Repeated privileged account failures immediately followed by process privilege escalation attempts and an unauthorized request to export cryptographic keys.<br>3. **Security Significance**: The sequence aligns with classic attack progression patterns, specifically targeting privileged access and confidential cryptographic material.<br>4. **Most Plausible Explanation**: Attempted unauthorized privilege escalation and credential compromise (Hypothesis A), with access control mechanisms successfully mitigating data exposure at the final step.<br>5. **Remaining Alternative Explanations**: A misconfigured administrative maintenance script cannot be completely excluded without process ancestry verification.<br>6. **Severity Classification**: Classified as **HIGH** due to the sensitivity of cryptographic keys and root account targeting.<br>7. **Action Execution State**: Response action **'User account suspension for insider threat (SIMULATED)'** has been **SIMULATED ONLY** in the research sandbox; no live production modifications have been executed.<br>8. **Immediate Next Steps**: Engage human SOC tier-2 analyst to inspect auditd process command lines for PID_9921.<br>9. **Closure Criteria**: Incident cannot be confirmed or closed until parent process ancestry and operator identity are verified.</p>
+
+    <h2>11. Technical Appendices</h2>
+    <div style="font-size: 12px; font-family: monospace; background: #2d3748; color: #edf2f7; padding: 16px; border-radius: 6px; white-space: pre-wrap;">
+Raw Ingested Logs:
+14:22:10 WARN auth.SecurityManager: Repeated authentication failures from user root on console session
+14:22:15 ALERT auth.SecurityManager: Unauthorized privilege escalation attempted by process PID_9921
+14:22:20 WARN dfs.FSNamesystem: Permission denied: user root is not authorized to export cryptographic keys
+    </div>
+</div>
+</body>
+</html>

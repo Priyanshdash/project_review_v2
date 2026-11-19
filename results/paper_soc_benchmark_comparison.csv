@@ -1,0 +1,10 @@
+Metric,Definition,CyberSentinel-LLM,Manual SOC
+MTTD,Mean Time to Detect,2.3 min,18.7 min
+MTTR (respond),Mean Time to Respond,0.08 min,12.4 min
+MTTR (resolve),Mean Time to Resolve,8.5 min,47.3 min
+FPR,False Positive Rate,1.2%,3.8%
+Alert Fatigue,Actionable Alerts Ratio,98.8%,96.2%
+Automation,Automated Resolution Rate,94.2%,12.5%
+CSR,Containment Success Rate,91.5%,67.3%
+FMR,False Mitigation Rate,3.2%,N/A (manual)
+RCS,Response Cost Score,0.23,1.85

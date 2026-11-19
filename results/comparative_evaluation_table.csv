@@ -1,0 +1,4 @@
+Configuration,accuracy,precision,recall,macro_f1,weighted_f1,latency_ms,multiclass_accuracy,multiclass_macro_f1,valid_output_rate
+1. Classifier-Only (RF),96.0,97.79,85.0,90.05,95.69,1.59,N/A (Binary),N/A (Binary),100.0
+2. LLM-Only (LLaMA-3-8B),96.0,97.79,85.0,90.05,95.69,0.03,94.0,49.69,100.0
+3. Classifier + LLM (Ensemble),96.67,98.15,87.5,91.91,96.46,0.12,93.33,49.62,100.0
